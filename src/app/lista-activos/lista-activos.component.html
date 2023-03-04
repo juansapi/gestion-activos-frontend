@@ -1,0 +1,25 @@
+<h2>Lista de Activos</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Codigo</th>
+            <th>Descripcion</th>
+            <th>Referencia</th>
+            <th>Estado</th>
+            <th>Marca</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let activo of activos">
+           <td>{{activo.cod_activo}}</td>
+           <td>{{activo.descripcion}}</td>
+           <td>{{activo.referencia}}</td>
+           <td>{{activo.estado}}</td>
+           <td>{{activo.marca}}</td>
+             
+        </tr>
+
+    </tbody>
+
+</table>

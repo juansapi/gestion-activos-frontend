@@ -1,0 +1,25 @@
+<h2>Lista de Activos</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Codigo</th>
+            <th>Fecha</th>
+            <th>Origen</th>
+            <th>Destino</th>
+            <th>Codigo Activo</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let movimiento of movimientos">
+           <td>{{movimiento.cod_movimiento}}</td>
+           <td>{{movimiento.fecha_mov}}</td>
+           <td>{{movimiento.origen}}</td>
+           <td>{{movimiento.ubicacion}}</td>
+           <td>{{movimiento.activo}}</td>
+             
+        </tr>
+
+    </tbody>
+
+</table>
